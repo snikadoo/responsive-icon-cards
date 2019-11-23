@@ -6,8 +6,93 @@
 
 html {
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.card-img img {
+  width: 50px;
+  display: block;
+  margin: auto;
+  padding-bottom: .5rem;
+}
+
+body {
+  margin: 0;
+  padding-top: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.card-body h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-body p {
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+}
+
+.cards {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    line-height: 1.4;
+    font-size: 110%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+  }
+
+  .card {
+    width: 33%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .card {
+    display: flex;
+  }
+
+
 }
